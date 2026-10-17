@@ -1,7 +1,7 @@
-// Licensed under the Dartastic Pro Software License Agreement.
+// Licensed under the MIT License.
 // Copyright 2025-2026 Mindful Software LLC d/b/a Dartastic.io, All rights reserved.
 
-import 'package:dartastic_opentelemetry/dartastic_opentelemetry.dart';
+import 'package:dartastic_opentelemetry_api/dartastic_opentelemetry_api.dart';
 
 import 'otel_fullstory_suppression.dart';
 
@@ -14,19 +14,19 @@ const _loggerName = 'package.fullstory';
 /// inherit it via baggage if your code propagates it.
 class OTelFullstory {
   OTelFullstory({
-    LoggerProvider? loggerProvider,
+    APILoggerProvider? loggerProvider,
     this.forwardEvent,
     this.forwardIdentify,
   }) : _loggerProvider = loggerProvider;
 
-  final LoggerProvider? _loggerProvider;
+  final APILoggerProvider? _loggerProvider;
   final void Function(String name, Map<String, Object?>? properties)?
       forwardEvent;
   final void Function(String uid, Map<String, Object?>? userVars)?
       forwardIdentify;
 
-  OTelLogger _logger() =>
-      (_loggerProvider ?? OTel.loggerProvider()).getLogger(_loggerName);
+  APILogger _logger() =>
+      (_loggerProvider ?? OTelAPI.loggerProvider()).getLogger(_loggerName);
 
   void event(String name, {Map<String, Object?>? properties}) {
     forwardEvent?.call(name, properties);
@@ -34,7 +34,7 @@ class OTelFullstory {
     _emit(
       body: 'fullstory.event $name',
       eventType: 'event',
-      attrs: [OTel.attributeString('fullstory.event.name', name)],
+      attrs: [OTelAPI.attributeString('fullstory.event.name', name)],
       flatPrefix: 'fullstory.property.',
       payload: properties,
     );
@@ -45,10 +45,10 @@ class OTelFullstory {
     forwardIdentify?.call(uid, userVars);
     if (fullstoryInstrumentationSuppressed()) return;
     final extras = <Attribute<Object>>[
-      OTel.attributeString('fullstory.uid', uid),
-      OTel.attributeString(User.userId.key, uid),
+      OTelAPI.attributeString('fullstory.uid', uid),
+      OTelAPI.attributeString(User.userId.key, uid),
       if (sessionUrl != null)
-        OTel.attributeString('fullstory.session.url', sessionUrl),
+        OTelAPI.attributeString('fullstory.session.url', sessionUrl),
     ];
     _emit(
       body: 'fullstory.identify $uid',
@@ -67,7 +67,7 @@ class OTelFullstory {
     Map<String, Object?>? payload,
   }) {
     final all = <Attribute<Object>>[
-      OTel.attributeString('fullstory.event.type', eventType),
+      OTelAPI.attributeString('fullstory.event.type', eventType),
       ...attrs,
     ];
     if (payload != null && flatPrefix != null) {
@@ -75,15 +75,15 @@ class OTelFullstory {
         if (v == null) return;
         final key = '$flatPrefix$k';
         if (v is String) {
-          all.add(OTel.attributeString(key, v));
+          all.add(OTelAPI.attributeString(key, v));
         } else if (v is int) {
-          all.add(OTel.attributeInt(key, v));
+          all.add(OTelAPI.attributeInt(key, v));
         } else if (v is double) {
-          all.add(OTel.attributeDouble(key, v));
+          all.add(OTelAPI.attributeDouble(key, v));
         } else if (v is bool) {
-          all.add(OTel.attributeBool(key, v));
+          all.add(OTelAPI.attributeBool(key, v));
         } else {
-          all.add(OTel.attributeString(key, v.toString()));
+          all.add(OTelAPI.attributeString(key, v.toString()));
         }
       });
     }
@@ -91,7 +91,7 @@ class OTelFullstory {
       severityNumber: Severity.INFO,
       severityText: 'info',
       body: body,
-      attributes: OTel.attributes(all),
+      attributes: OTelAPI.attributes(all),
     );
   }
 }

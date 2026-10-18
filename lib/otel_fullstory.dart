@@ -1,4 +1,4 @@
-// Licensed under the Dartastic Pro Software License Agreement.
+// Licensed under the MIT License.
 // Copyright 2025-2026 Mindful Software LLC d/b/a Dartastic.io, All rights reserved.
 
 /// OpenTelemetry bridge for FullStory.

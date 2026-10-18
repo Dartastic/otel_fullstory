@@ -1,193 +1,21 @@
-DARTASTIC PRO SOFTWARE LICENSE AGREEMENT
-========================================
+MIT License
 
-Effective Date: 2026-05-18
-Licensor: Mindful Software LLC d/b/a Dartastic.io, a Delaware limited
-liability company ("Dartastic", "Licensor", "we", "us"). The
-governing-law state and other defaults below are interim and subject
-to legal review.
-Licensee: the individual or legal entity that has been granted access
-to the Dartastic Pro private package registry ("Licensee", "you").
-Software: the Dartastic Pro Dart/Flutter library packages distributed
-via `https://pub.dartastic.io` and any documentation, configuration,
-data files, and updates Licensor makes available with them
-(the "Software").
+Copyright (c) 2025-2026 Mindful Software LLC d/b/a Dartastic.io
 
-By downloading, installing, depending on, or otherwise using the
-Software, you agree to this Agreement. If you are using the Software
-on behalf of an organization, you represent that you have authority
-to bind that organization, and "Licensee" includes that organization.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
----
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-1. GRANT OF LICENSE
-
-Subject to Licensee's continued compliance with this Agreement and
-payment of applicable fees, Licensor grants Licensee a non-exclusive,
-non-transferable, non-sublicensable, revocable license, during the
-subscription term, to:
-
-  (a) download and install the Software solely from the Dartastic Pro
-      private package registry at `https://pub.dartastic.io`;
-  (b) use the Software, in source or compiled form, internally
-      within Licensee's organization;
-  (c) embed the Software (in compiled or obfuscated form) into
-      Licensee's own applications and distribute those applications
-      to Licensee's end users, provided Licensee complies with
-      Section 3 (Restrictions).
-
-The Software is licensed, not sold. Licensor retains all right,
-title, and interest in and to the Software, including all
-intellectual property rights.
-
-2. SCOPE OF USE
-
-Licensee's use of the Software is limited to the seat count, tier,
-or other quantity specified in Licensee's active subscription with
-Licensor.
-
-3. RESTRICTIONS
-
-Except as expressly permitted in Section 1, Licensee shall NOT, and
-shall not permit any third party to:
-
-  (a) copy, modify, fork, port, translate, or create derivative
-      works from the Software except to the extent strictly
-      necessary to use the Software as licensed;
-  (b) sublicense, sell, rent, lease, lend, distribute, publish, or
-      otherwise make the source code of the Software available to
-      any third party, including by posting any portion of the
-      source to a public repository, package registry, gist, paste
-      service, or training corpus;
-  (c) remove, alter, or obscure any copyright, trademark, or other
-      proprietary notice contained in or on the Software;
-  (d) reverse engineer, disassemble, or decompile the Software,
-      except to the extent applicable law prohibits this
-      restriction and Licensee has first given Licensor written
-      notice and a reasonable opportunity to provide the
-      interoperability information itself;
-  (e) use the Software to develop, train, evaluate, or improve a
-      competing product or service;
-  (f) bypass or attempt to bypass any authentication, rate-limit,
-      licensing, or telemetry mechanism in the Software or in the
-      Dartastic Pro registry;
-  (g) use the Software in violation of applicable law, including
-      export-control, sanctions, and privacy law.
-
-4. OWNERSHIP AND FEEDBACK
-
-The Software is proprietary to Licensor. Licensee acquires no rights
-in the Software other than the limited license granted in Section 1.
-
-If Licensee provides Licensor with suggestions, bug reports, or
-other feedback ("Feedback"), Licensee grants Licensor a perpetual,
-irrevocable, royalty-free, worldwide license to use that Feedback
-for any purpose without obligation to Licensee.
-
-5. CONFIDENTIALITY
-
-The unobfuscated source code of the Software and any non-public
-documentation provided with it ("Confidential Information") is the
-confidential and trade-secret information of Licensor. Licensee
-shall:
-
-  (a) use Confidential Information only as needed to exercise the
-      rights granted in Section 1;
-  (b) protect Confidential Information with at least the same
-      degree of care it uses for its own confidential information,
-      and in no event less than reasonable care;
-  (c) restrict access to Confidential Information to employees and
-      contractors who need it to perform their duties and who are
-      bound by written confidentiality obligations at least as
-      protective as this Section.
-
-The obligations in this Section survive termination for five (5)
-years or until the Confidential Information becomes publicly
-available through no fault of Licensee, whichever occurs first.
-
-6. FEES AND TERM
-
-Licensee shall pay all subscription fees specified in the order
-form, invoice, or self-service checkout that authorized Licensee's
-access to the Software. Failure to pay terminates the license
-under Section 8.
-
-The license term begins on the Effective Date and continues for
-the subscription period purchased, renewing automatically unless
-either party cancels per the renewal terms in the order form.
-
-7. UPDATES AND SUPPORT
-
-Licensor may, but is not required to, provide updates, upgrades,
-bug fixes, and new versions of the Software during the term.
-Support is provided per the support level (if any) specified in
-Licensee's subscription.
-
-8. TERMINATION
-
-Either party may terminate this Agreement on written notice if
-the other party materially breaches it and does not cure the
-breach within thirty (30) days of receiving notice. Licensor may
-also terminate immediately, without cure, if Licensee:
-
-  (a) fails to pay any fee when due;
-  (b) breaches Section 3 (Restrictions) or Section 5
-      (Confidentiality);
-  (c) becomes insolvent, files for bankruptcy, or assigns assets
-      for the benefit of creditors.
-
-On termination, Licensee shall immediately stop using the Software,
-remove it from all Licensee systems and applications, and destroy
-or return all copies of Confidential Information. Sections 3, 4,
-5, 9, 10, 11, and 12 survive termination.
-
-9. DISCLAIMER OF WARRANTIES
-
-THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT
-WARRANTY OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
-WITHOUT LIMITATION ANY IMPLIED WARRANTY OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NON-INFRINGEMENT.
-LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE
-UNINTERRUPTED OR ERROR-FREE.
-
-10. LIMITATION OF LIABILITY
-
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL LICENSOR'S
-TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED
-THE FEES PAID BY LICENSEE TO LICENSOR IN THE TWELVE (12) MONTHS
-IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE LIABILITY.
-LICENSOR WILL NOT BE LIABLE FOR ANY LOST PROFITS, LOST REVENUE,
-LOST DATA, LOSS OF GOODWILL, OR ANY INDIRECT, INCIDENTAL,
-CONSEQUENTIAL, SPECIAL, OR PUNITIVE DAMAGES, EVEN IF LICENSOR HAS
-BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
-11. GOVERNING LAW AND VENUE
-
-This Agreement is governed by the laws of the State of Delaware,
-without regard to its conflict-of-laws principles. Any dispute
-arising out of or related to this Agreement shall be brought
-exclusively in the state or federal courts located in New Castle
-County, Delaware, and each party consents to the personal
-jurisdiction of those courts.
-
-12. GENERAL
-
-This Agreement is the entire agreement between the parties about
-the Software and supersedes all prior or contemporaneous
-agreements. Failure to enforce any provision is not a waiver. If
-any provision is held unenforceable, the remainder remains in
-effect. Licensee may not assign this Agreement without Licensor's
-prior written consent; Licensor may assign freely. Notices must
-be in writing to the email or address listed in Licensee's
-subscription record.
-
-Trademark notice: "Dartastic", the Dartastic logo, and "Dartastic
-Pro" are trademarks of Mindful Software LLC d/b/a Dartastic.io.
-The OpenTelemetry name and logo are trademarks of the Cloud Native
-Computing Foundation and are used to indicate compatibility, not
-affiliation.
-
----
-
-Copyright (c) 2025-2026 Mindful Software LLC d/b/a Dartastic.io.
-All rights reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
